@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <DefaultItemExcludes>$(DefaultItemExcludes);.git*;node_modules\**</DefaultItemExcludes>
+    <LangVersion>9.0</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,24 +16,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OrchardCore.Autoroute" Version="1.0.0-rc2-13929" />
-    <PackageReference Include="OrchardCore.ContentManagement" Version="1.0.0-rc2-13929" />
-    <PackageReference Include="OrchardCore.Contents" Version="1.0.0-rc2-13929" />
-    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0-rc2-13929" />
-    <PackageReference Include="OrchardCore.Flows" Version="1.0.0-rc2-13929" />
-    <PackageReference Include="OrchardCore.Html" Version="1.0.0-rc2-13929" />
-    <PackageReference Include="OrchardCore.MetaWeblog.Abstractions" Version="1.0.0-rc2-13929" />
-    <PackageReference Include="OrchardCore.Module.Targets" Version="1.0.0-rc2-13929" />
-    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.0.0-rc2-13929" />
+    <PackageReference Include="OrchardCore.Autoroute" Version="1.0.0-rc2-14640" />
+    <PackageReference Include="OrchardCore.ContentManagement" Version="1.0.0-rc2-14640" />
+    <PackageReference Include="OrchardCore.Contents" Version="1.0.0-rc2-14640" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0-rc2-14640" />
+    <PackageReference Include="OrchardCore.Flows" Version="1.0.0-rc2-14640" />
+    <PackageReference Include="OrchardCore.Html" Version="1.0.0-rc2-14640" />
+    <PackageReference Include="OrchardCore.MetaWeblog.Abstractions" Version="1.0.0-rc2-14640" />
+    <PackageReference Include="OrchardCore.Module.Targets" Version="1.0.0-rc2-14640" />
+    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.0.0-rc2-14640" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference
-      Include="..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj"
-      Condition="Exists('..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj')" />
-    <ProjectReference
-      Include="..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj"
-      Condition="Exists('..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj')" />
+    <ProjectReference Include="..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj" Condition="Exists('..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj')" />
+    <ProjectReference Include="..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj" Condition="Exists('..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj')" />
+    <ProjectReference Include="..\Helpful-Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj" />
   </ItemGroup>
 
 </Project>
