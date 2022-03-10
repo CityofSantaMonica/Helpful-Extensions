@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -15,47 +15,24 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OrchardCore.Autoroute" Version="1.2.2" />
-    <PackageReference Include="OrchardCore.ContentManagement" Version="1.2.2" />
-    <PackageReference Include="OrchardCore.Contents" Version="1.2.2" />
-    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.2.2" />
-    <PackageReference Include="OrchardCore.Flows" Version="1.2.2" />
-    <PackageReference Include="OrchardCore.Html" Version="1.2.2" />
-    <PackageReference Include="OrchardCore.MetaWeblog.Abstractions" Version="1.2.2" />
-    <PackageReference Include="OrchardCore.Module.Targets" Version="1.2.2" />
-    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.2.2" />
+    <PackageReference Include="OrchardCore.Autoroute" Version="1.0.0" />
+    <PackageReference Include="OrchardCore.ContentManagement" Version="1.0.0" />
+    <PackageReference Include="OrchardCore.Contents" Version="1.0.0" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0" />
+    <PackageReference Include="OrchardCore.Flows" Version="1.0.0" />
+    <PackageReference Include="OrchardCore.Html" Version="1.0.0" />
+    <PackageReference Include="OrchardCore.MetaWeblog.Abstractions" Version="1.0.0" />
+    <PackageReference Include="OrchardCore.Module.Targets" Version="1.0.0" />
+    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj" Condition="Exists('..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj')" />
-    <ProjectReference Include="..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj" Condition="Exists('..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj')" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Update="Microsoft.CodeAnalysis.Compilers" Version="4.0.1">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-    <PackageReference Update="Microsoft.CodeAnalysis.CSharp.CodeStyle" Version="4.0.1">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-    <PackageReference Update="Microsoft.CodeAnalysis.NetAnalyzers" Version="6.0.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-    <PackageReference Update="Microsoft.Net.Compilers" Version="4.0.1">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-    <PackageReference Update="SecurityCodeScan.VS2019" Version="5.6.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-    <PackageReference Update="SonarAnalyzer.CSharp" Version="8.34.0.42011">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
+    <ProjectReference
+      Include="..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj"
+      Condition="Exists('..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj')" />
+    <ProjectReference
+      Include="..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj"
+      Condition="Exists('..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj')" />
   </ItemGroup>
 
 </Project>
